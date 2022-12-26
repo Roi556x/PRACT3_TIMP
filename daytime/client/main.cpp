@@ -21,8 +21,8 @@ if(s == -1) {
 
 sockaddr_in * self_addr = new (sockaddr_in);
 self_addr->sin_family = AF_INET; // интернет протокол IPv4
-self_addr->sin_port = htons(44214);
-self_addr->sin_addr.s_addr = inet_addr("127.0.0.1");
+self_addr->sin_port = htons(44214); //порт 44214
+self_addr->sin_addr.s_addr = inet_addr("127.0.0.1"); // localhost
 
 sockaddr_in * srv_addr = new (sockaddr_in);
 srv_addr->sin_family = AF_INET; // интернет протокол IPv4
